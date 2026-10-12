@@ -1,0 +1,22 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: corners_d2
+target:
+  name: gmm_4_corners
+  n_components: 2
+  spatial_dim: 2
+  centre_range: 4.0
+  target_variance: 0.2
+  min_sep: 0.0
+n_components: 2
+spatial_dim: 2
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 1.0
+centre_sample_type: gaussian
+plot_lims:
+- - -6.0
+  - 6.0
+- - -6.0
+  - 6.0

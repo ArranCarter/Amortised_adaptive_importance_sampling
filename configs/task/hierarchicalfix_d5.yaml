@@ -1,0 +1,28 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: hierarchicalfix_d5
+target:
+  name: hierarchical
+  spatial_dim: 5
+  sigma_range:
+  - 10.0
+  - 10.0
+  tau_true_range:
+  - 4.25
+  - 4.25
+  mu_true_scale: 5.0
+  s_mu: 5.0
+  s_tau: 1.0
+  pin_seed: 3000
+n_components: 5
+spatial_dim: 5
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 8.0
+centre_sample_type: uniform
+plot_lims:
+- - -12.0
+  - 12.0
+- - -12.0
+  - 12.0

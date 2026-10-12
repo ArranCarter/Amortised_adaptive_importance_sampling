@@ -1,0 +1,10 @@
+# Metric settings.
+
+# Number of samples for OT metrics.
+n_ref_samples: 300
+# Draws to compute the ground truth values for expectations
+n_expectation_samples: 200000
+expectation_chunk: 5000
+
+seeds: [0, 1, 2, 3]
+batch_size: 64

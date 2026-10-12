@@ -1,0 +1,6 @@
+sampler=learnt sampler.checkpoint=results/M-funnel_d50-n50-k25-s100.pt task=funnel_d50 task.n_components=50 task.k_particles=25 wandb.density_dir=results/figures/funnel_d50_clean/learnt-s100 out=results/runs/FIG-learnt-funnel_d50-s100.json
+sampler=learnt sampler.checkpoint=results/M-funnel_d50-n50-k25-s101.pt task=funnel_d50 task.n_components=50 task.k_particles=25 wandb.density_dir=results/figures/funnel_d50_clean/learnt-s101 out=results/runs/FIG-learnt-funnel_d50-s101.json
+sampler=learnt sampler.checkpoint=results/M-funnel_d50-n50-k25-s102.pt task=funnel_d50 task.n_components=50 task.k_particles=25 wandb.density_dir=results/figures/funnel_d50_clean/learnt-s102 out=results/runs/FIG-learnt-funnel_d50-s102.json
+sampler=dm_pmc_resampling task=funnel_d50 task.n_components=50 task.k_particles=53 wandb.density_dir=results/figures/funnel_d50_clean/dm_pmc_resampling out=results/runs/FIG-dm_pmc_resampling-funnel_d50.json
+sampler=m_pmc task=funnel_d50 task.n_components=50 task.k_particles=53 wandb.density_dir=results/figures/funnel_d50_clean/m_pmc out=results/runs/FIG-m_pmc-funnel_d50.json
+sampler=gapis sampler.lam=0.0001 task=funnel_d50 task.n_components=50 task.k_particles=5 wandb.density_dir=results/figures/funnel_d50_clean/gapis out=results/runs/FIG-gapis-funnel_d50.json

@@ -1,0 +1,27 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: hierarchical_d25
+target:
+  name: hierarchical
+  spatial_dim: 25
+  sigma_range:
+  - 2.0
+  - 18.0
+  tau_true_range:
+  - 0.5
+  - 8.0
+  mu_true_scale: 5.0
+  s_mu: 5.0
+  s_tau: 1.0
+n_components: 5
+spatial_dim: 25
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 8.0
+centre_sample_type: uniform
+plot_lims:
+- - -12.0
+  - 12.0
+- - -12.0
+  - 12.0

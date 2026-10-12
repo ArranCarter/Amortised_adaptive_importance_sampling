@@ -1,0 +1,36 @@
+# The root config.
+defaults:
+  - sampler: dm_pmc_resampling
+  - task: gmm5_d2
+  - eval: default
+  - _self_
+
+seed: 0
+device: auto
+dtype: float32
+
+threads: 2
+
+# Where to write the output JSON.
+out: null
+
+wandb:
+  project: null
+  mode: online
+  group: null
+  tags: []
+  # Run name. Null gives `<sampler>-<task>-n<N>`
+  name: null
+  # Per-rollout-step density figures
+  density_pdf: false
+  # final samples plots
+  samples_pdf: false
+  density_dir: null   # null -> <results>/figures/<run name>
+  # Which target instance in the evaluation batch to draw for plotting
+  density_instance: 0
+  # Fixed axes limits for the plots, null takes it automatically from the target's limits.
+  density_view: null
+  # for plotting, take the same starting proposal initialisation
+  density_same_init: null
+  # replay the rollout to log the per-step curve and the sample figures.
+  rollout: false

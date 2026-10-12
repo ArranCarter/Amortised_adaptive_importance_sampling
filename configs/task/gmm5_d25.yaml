@@ -1,0 +1,22 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: gmm5_d25
+target:
+  name: gmm
+  n_components: 5
+  spatial_dim: 25
+  centre_range: 4.0
+  target_variance: 0.5
+  min_sep: 0.0
+n_components: 5
+spatial_dim: 25
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 4.0
+centre_sample_type: uniform
+plot_lims:
+- - -8.0
+  - 8.0
+- - -8.0
+  - 8.0

@@ -1,0 +1,7 @@
+name: gapis
+
+lam: ???
+repulse_nu: 0.05
+repulse_xi: 1.04
+adapt_covariance: true
+full_cov: true

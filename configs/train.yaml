@@ -1,0 +1,28 @@
+# Root config for `train.py`.
+defaults:
+  - task: gmm5_d2
+  - train: default
+  - eval: default
+  - _self_
+
+tag: "" # run name.
+device: auto
+dtype: float32
+
+threads: 2
+
+wandb:
+  project: null # null disables logging
+  mode: online
+  group: null
+  tags: []
+  # Per-rollout-step density figures
+  density_pdf: false
+  density_dir: null # null -> <results>/figures/<run name>
+  # Which target instance in the evaluation batch to draw for plotting
+  density_instance: 0
+  # Fixed axes limits for the plots, null takes it automatically from the target's limits.
+  density_view: null
+  # for plotting, take the same starting proposal initialisation
+  density_same_init: null
+  figure_every: 0

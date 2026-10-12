@@ -1,0 +1,31 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: blr_d2
+target:
+  name: blr
+  spatial_dim: 2
+  n_range:
+  - 3
+  - 12
+  cond_log10_range:
+  - 0.0
+  - 2.0
+  beta_scale: 2.0
+  sigma_range:
+  - 0.3
+  - 1.5
+  prior_precision: 0.1
+  prior_a: 1.0
+  prior_b: 1.0
+n_components: 5
+spatial_dim: 2
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 6.0
+centre_sample_type: uniform
+plot_lims:
+- - -10.0
+  - 10.0
+- - -10.0
+  - 10.0

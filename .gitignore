@@ -1,0 +1,10 @@
+*Zone.Identifier
+*.pyc
+*.log
+*outputs/*
+*wandb/*
+*.pt
+
+results/
+
+*.ipynb

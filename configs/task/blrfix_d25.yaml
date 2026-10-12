@@ -1,0 +1,32 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: blrfix_d25
+target:
+  name: blr
+  spatial_dim: 25
+  n_range:
+  - 180
+  - 180
+  cond_log10_range:
+  - 1.0
+  - 1.0
+  beta_scale: 2.0
+  sigma_range:
+  - 0.9
+  - 0.9
+  prior_precision: 0.1
+  prior_a: 1.0
+  prior_b: 1.0
+  pin_seed: 1000
+n_components: 5
+spatial_dim: 25
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 6.0
+centre_sample_type: uniform
+plot_lims:
+- - -10.0
+  - 10.0
+- - -10.0
+  - 10.0

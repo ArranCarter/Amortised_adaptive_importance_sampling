@@ -1,0 +1,27 @@
+# The dataclass defaults in core/specs.py and learnt/train.TrainConfig.
+# Edit the dataclass, then this file to match.
+name: bananahard_d2
+target:
+  name: banana_nd
+  spatial_dim: 2
+  b_range:
+  - 0.1
+  - 0.5
+  sigma1_range:
+  - 1.0
+  - 3.0
+  sigma2_range:
+  - 0.5
+  - 1.5
+n_components: 5
+spatial_dim: 2
+n_steps: 15
+k_particles: 15
+init_variance: 1.0
+centre_scale: 4.0
+centre_sample_type: uniform
+plot_lims:
+- - -8.0
+  - 8.0
+- - -8.0
+  - 8.0
