@@ -106,3 +106,13 @@ For all experiments:
 ./run_scripts/run_bananahard5_figs.sh    # 18 jobs
 ```
 ---
+
+## Citation
+```bibtex
+@article{carter2026aais,
+    title    = {Amortised adaptive importance sampling},
+    author   = {Carter, Arran and Elvira, Víctor and Whitammer, Esmeralda S},
+    year     = {2026},
+    journal  = {arXiv preprint arXiv:2610.16736},
+}
+```
