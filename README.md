@@ -1,5 +1,5 @@
 # Amortised adaptive importance sampling
-
+Code for <a href="https://arxiv.org/abs/2610.16736" target="_blank">amortised adaptive importance sampling</a>.
 
 ---
 
@@ -74,7 +74,7 @@ For just the learnt sampler on the main 4 families:
 
 For all experiments:
 
-**Stage 1 — train.** These train and evaluate the learnt samplers, checkpoints are saved and are needed for some evaluations in the second set of runs.
+**Stage 1 -- train.** These train and evaluate the learnt samplers, checkpoints are saved and are needed for some evaluations in the second set of runs.
 
 ```bash
 ./run_scripts/run_main_learnt.sh         # 48 jobs
@@ -89,7 +89,7 @@ For all experiments:
 ./run_scripts/run_bananahard5_train.sh   #  6 jobs (figures only)
 ```
 
-**Stage 2 — evaluation**, once the checkpoints exist.
+**Stage 2 -- evaluation**, once the checkpoints exist.
 
 ```bash
 ./run_scripts/run_main_baselines.sh      #  64 jobs, doesnt need any learnt checkpoints
@@ -106,3 +106,13 @@ For all experiments:
 ./run_scripts/run_bananahard5_figs.sh    # 18 jobs
 ```
 ---
+
+## Citation
+```bibtex
+@article{carter2026aais,
+    title    = {Amortised adaptive importance sampling},
+    author   = {Carter, Arran and Elvira, Víctor and Whitammer, Esmeralda S},
+    year     = {2026},
+    journal  = {arXiv preprint arXiv:2610.16736},
+}
+```
